@@ -21,19 +21,6 @@ function Navbar() {
           {siteConfig.logo}
         </a>
 
-        <button
-          type="button"
-          className={`navbar__toggle ${isMenuOpen ? 'navbar__toggle--active' : ''}`}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
-          aria-expanded={isMenuOpen}
-          aria-controls="navbar-menu"
-        >
-          <span />
-          <span />
-          <span />
-        </button>
-
         <ul
           id="navbar-menu"
           className={`navbar__links ${isMenuOpen ? 'navbar__links--open' : ''}`}
@@ -46,6 +33,19 @@ function Navbar() {
             </li>
           ))}
         </ul>
+
+        <button
+          type="button"
+          className={`navbar__toggle ${isMenuOpen ? 'navbar__toggle--active' : ''}`}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={isMenuOpen}
+          aria-controls="navbar-menu"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
     </nav>
   );
