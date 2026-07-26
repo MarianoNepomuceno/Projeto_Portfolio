@@ -10,7 +10,7 @@ export const navLinks = [
 ];
 
 export const siteConfig = {
-  logo: 'MN',
+  logo: 'Mariano',
   copyright: 'Mariano Nepomuceno',
   credit: 'Feito com React + Vite',
 };
