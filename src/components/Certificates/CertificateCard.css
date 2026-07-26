@@ -1,0 +1,184 @@
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.certificate-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.certificate-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.certificate-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.certificate-card__icon--database {
+  background-color: rgba(6, 182, 212, 0.12);
+  color: #06b6d4;
+}
+
+.certificate-card__icon--backend {
+  background-color: rgba(59, 130, 246, 0.12);
+  color: #3b82f6;
+}
+
+.certificate-card__icon--javascript {
+  background-color: rgba(234, 179, 8, 0.12);
+  color: #eab308;
+}
+
+.certificate-card__icon--agile {
+  background-color: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
+}
+
+.certificate-card__icon--data-science {
+  background-color: rgba(168, 85, 247, 0.12);
+  color: #a855f7;
+}
+
+.certificate-card__icon--computing {
+  background-color: rgba(249, 115, 22, 0.12);
+  color: #f97316;
+}
+
+.certificate-card__icon--web {
+  background-color: rgba(236, 72, 153, 0.12);
+  color: #ec4899;
+}
+
+.certificate-card__icon--legislation {
+  background-color: rgba(148, 163, 184, 0.12);
+  color: #94a3b8;
+}
+
+.certificate-card__category {
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.certificate-card__category--database {
+  color: #06b6d4;
+  background-color: rgba(6, 182, 212, 0.1);
+}
+
+.certificate-card__category--backend {
+  color: #3b82f6;
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.certificate-card__category--javascript {
+  color: #eab308;
+  background-color: rgba(234, 179, 8, 0.1);
+}
+
+.certificate-card__category--agile {
+  color: #22c55e;
+  background-color: rgba(34, 197, 94, 0.1);
+}
+
+.certificate-card__category--data-science {
+  color: #a855f7;
+  background-color: rgba(168, 85, 247, 0.1);
+}
+
+.certificate-card__category--computing {
+  color: #f97316;
+  background-color: rgba(249, 115, 22, 0.1);
+}
+
+.certificate-card__category--web {
+  color: #ec4899;
+  background-color: rgba(236, 72, 153, 0.1);
+}
+
+.certificate-card__category--legislation {
+  color: #94a3b8;
+  background-color: rgba(148, 163, 184, 0.1);
+}
+
+.certificate-card__body {
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+.certificate-card__title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.certificate-card__institution {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+}
+
+.certificate-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 14px;
+}
+
+.certificate-card__meta-divider {
+  color: var(--text-secondary);
+}
+
+.certificate-card__description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.certificate-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.certificate-card__btn {
+  flex: 1;
+  min-width: 140px;
+  font-size: 0.85rem;
+  padding: 10px 16px;
+}
+
+@media (max-width: 480px) {
+  .certificate-card {
+    padding: 22px;
+  }
+
+  .certificate-card__actions {
+    flex-direction: column;
+  }
+
+  .certificate-card__btn {
+    width: 100%;
+  }
+}

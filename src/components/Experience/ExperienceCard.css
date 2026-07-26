@@ -1,0 +1,69 @@
+.experience-card {
+  padding: 40px;
+  max-width: 720px;
+}
+
+.experience-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.experience-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius);
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.experience-card__role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.experience-card__company {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.experience-card__highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.experience-card__highlight {
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.experience-card__highlight::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    padding: 28px;
+  }
+
+  .experience-card__highlights {
+    grid-template-columns: 1fr;
+  }
+}
