@@ -12,12 +12,28 @@ function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleLinkClick = () => setIsMenuOpen(false);
+  const scrollToSection = (hash) => {
+    if (!hash.startsWith('#')) return;
+    const target = document.querySelector(hash);
+    if (!target) return;
+
+    const navbarHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--navbar-height')) || 72;
+    const top = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 12;
+
+    window.scrollTo({ top, behavior: 'smooth' });
+    window.history.pushState(null, '', hash);
+  };
+
+  const handleLinkClick = (event, href) => {
+    event.preventDefault();
+    setIsMenuOpen(false);
+    scrollToSection(href);
+  };
 
   return (
     <nav className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`} aria-label="Navegação principal">
       <div className="container navbar__container">
-        <a href="#home" className="navbar__logo" onClick={handleLinkClick} aria-label="Ir para o início">
+        <a href="#home" className="navbar__logo" onClick={(event) => handleLinkClick(event, '#home')} aria-label="Ir para o início">
           {siteConfig.logo}
         </a>
 
@@ -27,7 +43,7 @@ function Navbar() {
         >
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a href={link.href} className="navbar__link" onClick={handleLinkClick}>
+              <a href={link.href} className="navbar__link" onClick={(event) => handleLinkClick(event, link.href)}>
                 {link.label}
               </a>
             </li>
