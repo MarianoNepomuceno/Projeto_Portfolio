@@ -67,6 +67,21 @@ button {
 
 .section {
   padding: var(--section-padding) 0;
+  /* avoid section titles being hidden under a fixed navbar */
+  scroll-margin-top: calc(var(--navbar-height) + 16px);
+  /* keep sections flexible and let content determine height */
+  display: block;
+}
+
+/* Standardize section inner layout: center horizontally while allowing
+   section content to grow naturally. Use column flex to keep headings
+   centered and inner grids/lists to manage their own layout. */
+.section > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
 
 .section-title {

@@ -1,8 +1,9 @@
 .hero {
-  min-height: 100vh;
+  /* Let hero grow with content; keep a pleasant minimum height */
+  min-height: 60vh;
   display: flex;
   align-items: center;
-  padding-top: var(--navbar-height);
+  padding: calc(var(--section-padding) / 2) 0;
 }
 
 .hero__container {
