@@ -10,7 +10,6 @@ export const projects = [
     descricao:
       'Sistema web de agendamento para barbearias com autenticação, cadastro de clientes, gerenciamento de horários, painel administrativo e banco de dados MySQL.',
     tecnologias: ['PHP', 'JavaScript', 'HTML', 'CSS', 'MySQL'],
-    imagem: '/images/barbertime.svg',
     github: 'https://github.com/MarianoNepomuceno/Projeto_Barbearia.git',
     demo: 'https://barbearia.ifree.page/pages/login.html?i=1',
   },
@@ -20,7 +19,6 @@ export const projects = [
     descricao:
       'Meu portfolio pessoal construído com React e Vite — mostra meus projetos, experiências e contato.',
     tecnologias: ['React', 'Vite', 'JavaScript', 'CSS', 'HTML'],
-    imagem: '/images/eu-projeto.png',
     github: 'https://github.com/MarianoNepomuceno/Projeto_Portfolio.git',
     demo: 'https://marianonepomuceno.github.io/Projeto_Portfolio',
   },
