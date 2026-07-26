@@ -17,7 +17,7 @@ export const projects = [
     id: 2,
     nome: 'Portfolio Pessoal',
     descricao:
-      'Meu portfolio pessoal construído com React e Vite — mostra meus projetos, experiências e contato.',
+      'Meu portfolio pessoal construído com React e Vite, mostra meus projetos, experiências e contato.',
     tecnologias: ['React', 'Vite', 'JavaScript', 'CSS', 'HTML'],
     github: 'https://github.com/MarianoNepomuceno/Projeto_Portfolio.git',
     demo: 'https://marianonepomuceno.github.io/Projeto_Portfolio',

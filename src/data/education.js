@@ -4,25 +4,32 @@ export const educationSection = {
 };
 
 export const education = [
-  {
+    {
     id: 1,
-    titulo: 'Tecnólogo em Gastronomia',
-    instituicao: 'Instituição de Ensino',
+    titulo: 'Ensino Médio',
+    instituicao: 'IFMA - Campus Barra do Corda/MA',
     periodo: 'Concluído',
     status: 'concluido',
   },
   {
     id: 2,
-    titulo: 'Análise e Desenvolvimento de Sistemas',
-    instituicao: 'Instituição de Ensino',
-    periodo: 'Em andamento',
-    status: 'andamento',
+    titulo: 'Técnico em Química',
+    instituicao: 'IFMA - Campus Barra do Corda/MA',
+    periodo: 'Concluído',
+    status: 'concluido',
   },
   {
     id: 3,
-    titulo: 'Cursos Complementares',
-    instituicao: 'Diversas plataformas',
-    periodo: 'Contínuo',
-    status: 'continuo',
+    titulo: 'Tecnólogo em Gastronomia',
+    instituicao: 'UNINASSAU - Campus Dorotéias Fortaleza/CE',
+    periodo: 'Concluído',
+    status: 'concluido',
+  },
+  {
+    id: 4,
+    titulo: 'Análise e Desenvolvimento de Sistemas',
+    instituicao: 'UEMA - Campus Barra do Corda/MA',
+    periodo: 'Em andamento',
+    status: 'andamento',
   },
 ];
