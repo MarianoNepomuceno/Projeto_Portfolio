@@ -4,12 +4,6 @@
   align-items: center;
   gap: 12px;
   padding: 28px 16px;
-  transition: transform var(--transition), border-color var(--transition);
-}
-
-.skill-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(59, 130, 246, 0.3);
 }
 
 .skill-card__icon {

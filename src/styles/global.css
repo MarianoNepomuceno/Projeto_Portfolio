@@ -13,6 +13,7 @@
   --navbar-height: 72px;
   --section-padding: 100px;
   --container-max: 1140px;
+  --container-padding: 24px;
 }
 
 *,
@@ -62,39 +63,39 @@ button {
   width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--container-padding);
 }
 
 .section {
   padding: var(--section-padding) 0;
-  /* avoid section titles being hidden under a fixed navbar */
   scroll-margin-top: calc(var(--navbar-height) + 16px);
-  /* keep sections flexible and let content determine height */
-  display: block;
 }
 
-/* Standardize section inner layout: center horizontally while allowing
-   section content to grow naturally. Use column flex to keep headings
-   centered and inner grids/lists to manage their own layout. */
 .section > .container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
 }
 
 .section-title {
   font-size: clamp(1.75rem, 4vw, 2.25rem);
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   letter-spacing: -0.02em;
+  line-height: 1.05;
+  max-width: 680px;
+  text-align: left;
 }
 
 .section-subtitle {
   color: var(--text-secondary);
   font-size: 1.05rem;
-  max-width: 560px;
+  max-width: 640px;
+  margin: 0;
+  line-height: 1.7;
+  text-align: left;
 }
 
 .btn {
@@ -151,11 +152,24 @@ button {
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow);
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.card:not(.contact-card):hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.3);
 }
 
 @media (max-width: 768px) {
   :root {
     --section-padding: 72px;
     --navbar-height: 64px;
+    --container-padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
   }
 }

@@ -1,4 +1,6 @@
 .about__content {
+  width: 100%;
+  max-width: 720px;
   padding: 40px;
   display: flex;
   flex-direction: column;

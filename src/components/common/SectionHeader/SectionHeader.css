@@ -1,5 +1,6 @@
 .section-header {
   margin-bottom: 48px;
-  text-align: center;
+  text-align: left;
   width: 100%;
+  max-width: 720px;
 }
