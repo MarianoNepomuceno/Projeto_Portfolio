@@ -20,6 +20,6 @@ export const projects = [
       'Meu portfolio pessoal construído com React e Vite, mostra meus projetos, experiências e contato.',
     tecnologias: ['React', 'Vite', 'JavaScript', 'CSS', 'HTML'],
     github: 'https://github.com/MarianoNepomuceno/Projeto_Portfolio.git',
-    demo: 'https://marianonepomuceno.github.io/Projeto_Portfolio',
+    demo: 'https://marianonepomuceno.onrender.com/',
   },
 ];
