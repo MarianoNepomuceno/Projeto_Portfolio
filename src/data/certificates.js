@@ -103,4 +103,26 @@ export const certificates = [
     categoria: 'Legislação',
     arquivoPdf: '/certificates/prevencao-lavagem-dinheiro.pdf',
   },
+   {
+    id: 10,
+    nome: 'React: Construindo Single Page Applications Dinâmicas e Interativas',
+    instituicao: 'IFRS',
+    cargaHoraria: '40h',
+    ano: '2026',
+    descricao:
+      'React e Componentização com JSX; Gerenciamento de Estado e Ciclo de Vida dos Componentes em React; Estilização de Componentes no React e Gerenciamento de Rotas no React; Integração com APIs e Manipulação de Dados.',
+    categoria: 'Desenvolvimento Web',
+    arquivoPdf: '/certificates/react-spa.pdf',
+  },
+  {
+    id: 11,
+    nome: 'Programação Básica com Java I e II',
+    instituicao: 'IFRS',
+    cargaHoraria: '80h',
+    ano: '2026',
+    descricao:
+      'Conceitos Fundamentais; O Hardware; O Software; Introdução à Programação; Introdução à Linguagem Java; Estruturas de decisão e seleção e repetição; Estruturas de repetição; Outras estruturas de controle; Outras ferramentas da linguagem Java.',
+    categoria: 'Backend',
+    arquivoPdf: '/certificates/programacao-basica-java-i-ii.pdf',
+  }
 ];
